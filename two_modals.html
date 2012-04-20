@@ -1,0 +1,40 @@
+<html>
+<head>
+
+<script src="js/jquery-1.4.2.min.js"></script>
+<script src="js/tools.js"></script>
+
+<link rel="stylesheet" href="css/tools.css" />
+<style type="text/css">
+#hidden_content {display:none;}
+
+
+
+</style>
+
+</head>
+<body>
+
+<p><a href="#hidden_content" class="dialog" name="modal">Modal This!</a></p>
+
+<div id="hidden_content">
+  <h3>Peek-a-boo!</h3>
+  <img src="http://placekitten.com/200/300" />
+  <p>This content was hidden until you clicked that link there, Sonny Jim.</p>
+</div>
+
+<p><a href="external_file.html" class="dialog" name="modal">Modal That!</a></p>
+
+
+<div id="modal">
+  <div class="window" id="dialog">
+    <a class="close" title="Close Window">Click to close</a>
+    <span class="null" id="dialog-content"></span>
+  </div>
+  <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->
+  <div id="mask"></div>
+</div>
+
+
+</body>
+</html>
