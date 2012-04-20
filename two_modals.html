@@ -6,10 +6,11 @@
 
 <link rel="stylesheet" href="css/tools.css" />
 <style type="text/css">
+body {margin:0; padding:0; text-align:center;}
 #hidden_content {display:none;}
-
-
-
+p {display:inline-block; background:red; padding:.5em; margin:1em; border-radius:10px; box-shadow:0 2px 5px #555;}
+p:nth-of-type(2) {background:blue;}
+a {color:white; font-weight:bold; text-decoration:none;}
 </style>
 
 </head>
@@ -26,14 +27,6 @@
 <p><a href="external_file.html" class="dialog" name="modal">Modal That!</a></p>
 
 
-<div id="modal">
-  <div class="window" id="dialog">
-    <a class="close" title="Close Window">Click to close</a>
-    <span class="null" id="dialog-content"></span>
-  </div>
-  <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->
-  <div id="mask"></div>
-</div>
 
 
 </body>
